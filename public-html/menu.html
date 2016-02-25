@@ -3,7 +3,7 @@
    <html xmlns='http://www.w3.org/1999/xhtml' xml:lang='it' lang='it'>
    <head>
 	<title>Menù | Ristorante Sakura</title>
-	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	<meta name="title" content="Menù | Ristorante Sakura - Ristorante Giapponese - Bassano del Grappa" />
 	<meta name="description" content="Ristorante Giapponese a Bassano del Grappa. Specialità Sushi con servizio d'asporto." />
@@ -11,14 +11,14 @@
     <meta name="author" content="Andrea Tombolato, Eduard Bicego, Davide Castello" />
     <meta name="language" content="italian it" />
     <meta http-equiv="Content-Script-Type" content="text/javascript" />
-    <link rel="shortcut icon" type="image/png" href="../images/favicon.png"/>
-    <script type="text/javascript" src="../js/scripts.js"></script>
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+    <script type="text/javascript" src="js/scripts.js"></script>
 </head>
       
    <body onload="manageNav(); hideElement()">
 	<div id="header">
 		<div id="fixed-info">
-			<p><a id="city" href="../dove-siamo.html">Bassano del Grappa</a> | <a class="tel" href="tel:0424 382286">0424 382286</a></p>
+			<p><a id="city" href="dove-siamo.html">Bassano del Grappa</a> | <a class="tel" href="tel:0424 382286">0424 382286</a></p>
 		</div>			<div id="top-bar">
 				<div id="logo">
 					<h1><span xml:lang="ja">Sakura</span> - Ristorante Giapponese</h1>
@@ -30,11 +30,11 @@
             <a class="aiuti" href="#path">Salta la navigazione</a>
 		<div id="nav-menu">
 			   <ul>
-				<li xml:lang="en"><a href="../index.html">Home</a></li>
+				<li xml:lang="en"><a href="index.html">Home</a></li>
 				<li>Menù</li>
-				<li><a href="../chi-siamo.html">Chi siamo</a></li>
-				<li><a href="../dove-siamo.html">Dove siamo</a></li>
-				<li><a href="../curiosita.html">Curiosità</a></li>
+				<li><a href="chi-siamo.html">Chi siamo</a></li>
+				<li><a href="dove-siamo.html">Dove siamo</a></li>
+				<li><a href="curiosita.html">Curiosità</a></li>
 			   </ul>
 		    </div>
 	</div>
@@ -47,139 +47,377 @@
           <p class='info'>Seleziona una categoria per accedere ai nostri piatti.</p>
           
 <div id='fast-search' class='panel'>
-            <h3>Ricerca Veloce</h3>
-            <ul><li><a href='#Antipasto'>Antipasto</a></li><li><a href='#Carpaccio'>Carpaccio</a></li><li><a href='#Primo'>Primo</a></li><li><a href='#Secondo'>Secondo</a></li><li><a href='#SushiNigiri'><span xml:lang="ja">Sushi Nigiri</span></a></li><li><a href='#Temaki'><span xml:lang="ja">Temaki</span></a></li><li><a href='#Uramaki'>Uramaki</a></li><li><a href='#Futomaki'><span xml:lang="ja">Futomaki</span></a></li><li><a href='#Hossomaki'><span xml:lang="ja">Hossomaki</span></a></li><li><a href='#SushiESashimi'><span xml:lang="ja">Sushi</span> e <span xml:lang="ja">Sashimi</span></a></li><li><a href='#Barca'>Barca</a></li><li><a href='#Dessert'>Dessert</a></li><li><a href='#Vini'>Vini</a></li><li><a href='#Birre'>Birre</a></li><li><a href='#Bevande'>Bevande</a></li></ul>
-         </div>
+   <h3>Ricerca Veloce</h3>
+   <ul>
+      <li><a href='#Antipasto'>Antipasto</a></li>
+      <li><a href='#Carpaccio'>Carpaccio</a></li>
+      <li><a href='#Primo'>Primo</a></li>
+      <li><a href='#Secondo'>Secondo</a></li>
+      <li><a href='#SushiNigiri'><span xml:lang="ja">Sushi Nigiri</span></a></li>
+      <li><a href='#Temaki'><span xml:lang="ja">Temaki</span></a></li>
+      <li><a href='#Uramaki'>Uramaki</a></li>
+      <li><a href='#Futomaki'><span xml:lang="ja">Futomaki</span></a></li>
+      <li><a href='#Hossomaki'><span xml:lang="ja">Hossomaki</span></a></li>
+      <li><a href='#SushiESashimi'><span xml:lang="ja">Sushi</span> e <span xml:lang="ja">Sashimi</span></a></li>
+      <li><a href='#Barca'>Barca</a></li><li><a href='#Dessert'>Dessert</a></li>
+      <li><a href='#Vini'>Vini</a></li>
+      <li><a href='#Birre'>Birre</a></li>
+      <li><a href='#Bevande'>Bevande</a></li>
+   </ul>
+</div>
 <div class='panel'>
-               <h3>Cibi</h3>
-               <div class='panel'>
-               <div class='list-title'>
-               <h4><a href='javascript:void(0)' onclick="manageMenu('Antipasto')">Antipasto</a></h4>
-               
-            </div>
-            <dl class='portata' id='Antipasto'>
-            <dt>3 - <strong>Involtini Giapponesi è sicuro</strong> <span class='prezzo'>€ 2.50</span></dt><dt>1a - <strong><span xml:lang="ja">Edamame</span></strong> <span class='prezzo'>€ 3.00</span></dt><dd>Fagioli di soia lessi</dd><dt>1b - <strong><span xml:lang="ja">Daikon</span></strong> <span class='prezzo'>€ 3.00</span></dt><dd>Rapa gialla marinata</dd><dt>2 - <strong><span xml:lang="ja">Sunonomo</span></strong> <span class='prezzo'>€ 5.00</span></dt><dd>Pesce marinato con aceto di riso, servito con alghe e cetrioli</dd><dt>3 - <strong><span xml:lang="ja">Kaiser</span></strong> <span class='prezzo'>€ 8.00</span></dt><dd>Insalata con alghe <span xml:lang="ja">kombu</span> e <span xml:lang="ja">sashimi</span></dd><dt>4 - <strong>Insalata di alghe</strong> <span class='prezzo'>€ 6.00</span></dt><dt>5 - <strong><span xml:lang="ja">Agedashi Toufu</span></strong> <span class='prezzo'>€ 4.00</span></dt><dd>Formaggio di soia fritto</dd><dt>6 - <strong><span xml:lang="ja">Tataki Toufu</span></strong> <span class='prezzo'>€ 6.00</span></dt><dd>Insalata di formaggio giapponese con tonno</dd><dt>6a - <strong><span xml:lang="ja">Gyoza Kingyo</span></strong> <span class='prezzo'>€ 6.00</span></dt><dd>Ravioli giapponesi di pesce</dd><dt>10 - <strong><span xml:lang="ja">Misoshiru</span></strong> <span class='prezzo'>€ 3.00</span></dt><dd>Zuppa con pasta di soia, alghe, <span xml:lang="ja">toufu</span> e cipollotti</dd></dl>
-         <p class='end-list'><a href='#header'>Torna all'inizio</a></p>
-      </div><div class='panel'>
-               <div class='list-title'>
-               <h4><a href='javascript:void(0)' onclick="manageMenu('Carpaccio')">Carpaccio</a></h4>
-               
-            </div>
-            <dl class='portata' id='Carpaccio'>
-            <dt>7 - <strong>Carpaccio misto</strong> <span class='prezzo'>€ 13.00</span></dt><dt>8a - <strong>Carpaccio di tonno</strong> <span class='prezzo'>€ 12.00</span></dt><dt>8b - <strong>Carpaccio di salmone</strong> <span class='prezzo'>€ 11.00</span></dt><dt>8c - <strong>Carpaccio di branzino</strong> <span class='prezzo'>€ 11.00</span></dt><dt>9 - <strong>Carpaccio di gamberi crudi</strong> <span class='prezzo'>€ 11.00</span></dt></dl>
-         <p class='end-list'><a href='#header'>Torna all'inizio</a></p>
-      </div><div class='panel'>
-               <div class='list-title'>
-               <h4><a href='javascript:void(0)' onclick="manageMenu('Primo')">Primo</a></h4>
-               
-            </div>
-            <dl class='portata' id='Primo'>
-            <dt>11 - <strong><span xml:lang="ja">Tempura udon</span></strong> <span class='prezzo'>€ 8.00</span></dt><dd>Spaghetti giapponesi con <span xml:lang="ja">tempura</span> in brodo</dd><dt>12 - <strong><span xml:lang="ja">Yaki udon</span></strong> <span class='prezzo'>€ 8.00</span></dt><dd>Spaghetti giapponesi con frutti di mare</dd><dt>13 - <strong><span xml:lang="ja">Yaki meshi</span></strong> <span class='prezzo'>€ 8.00</span></dt><dd>Riso con frutti di mare</dd><dt>14 - <strong><span xml:lang="ja">Ramen</span> di pesce</strong> <span class='prezzo'>€ 8.00</span></dt><dd>Spaghetti giapponesi in brodo con pesce</dd><dt>15 - <strong><span xml:lang="ja">Ramen</span> di carne</strong> <span class='prezzo'>€ 7.00</span></dt><dd>Spaghetti giapponesi in brodo con carne</dd><dt>16 - <strong><span xml:lang="ja">Katsu don</span></strong> <span class='prezzo'>€ 8.00</span></dt><dd>Riso con cotolette di maiale</dd><dt>17 - <strong><span xml:lang="ja">Unagidon</span></strong> <span class='prezzo'>€ 13.00</span></dt><dd>Riso con anguilla affumicata</dd><dt>18 - <strong><span xml:lang="ja">Chirashi</span></strong> <span class='prezzo'>€ 13.00</span></dt><dd>Ciotola di riso aromatizzato con fette di <span xml:lang="ja">sashimi</span></dd></dl>
-         <p class='end-list'><a href='#header'>Torna all'inizio</a></p>
-      </div><div class='panel'>
-               <div class='list-title'>
-               <h4><a href='javascript:void(0)' onclick="manageMenu('Secondo')">Secondo</a></h4>
-               
-            </div>
-            <dl class='portata' id='Secondo'>
-            <dt>19 - <strong><span xml:lang="ja">Ebi tempura</span></strong> <span class='prezzo'>€ 8.00</span></dt><dd>Frittura di gamberi</dd><dt>20 - <strong><span xml:lang="ja">Yasai tempura</span></strong> <span class='prezzo'>€ 6.00</span></dt><dd>Frittura di verdure</dd><dt>21 - <strong><span xml:lang="ja">Moriawase tempura</span></strong> <span class='prezzo'>€ 8.00</span></dt><dd>Frittura di gamberi e verdura</dd><dt>22 - <strong><span xml:lang="ja">Tonkazu</span></strong> <span class='prezzo'>€ 8.00</span></dt><dd>Cotoletta di maiale</dd><dt>23 - <strong><span xml:lang="ja">Karaaghe</span></strong> <span class='prezzo'>€ 8.00</span></dt><dd>Frittura di pollo con sesamo e zenzero</dd><dt>24 - <strong><span xml:lang="ja">Yaki tori</span></strong> <span class='prezzo'>€ 8.00</span></dt><dd>Spiedini di pollo con salsa di soia e miele</dd><dt>25 - <strong><span xml:lang="ja">Tori teriyaki</span></strong> <span class='prezzo'>€ 8.00</span></dt><dd>Pezzi di pollo con salsa <span xml:lang="ja">teriyaki</span></dd><dt>26 - <strong><span xml:lang="ja">Ikafurai</span></strong> <span class='prezzo'>€ 8.00</span></dt><dd>Calamari fritti con briciole di pane</dd><dt>27 - <strong><span xml:lang="ja">Tataki</span> di tonno</strong> <span class='prezzo'>€ 13.00</span></dt><dd>Filetto di tonno scottato in crosta di sesamo</dd><dt>27a - <strong><span xml:lang="ja">Tataki</span> di salmone</strong> <span class='prezzo'>€ 11.00</span></dt><dt>27b - <strong><span xml:lang="ja">Tataki</span> di branzino</strong> <span class='prezzo'>€ 11.00</span></dt><dt>28 - <strong><span xml:lang="ja">Yaki nuki</span></strong> <span class='prezzo'>€ 11.00</span></dt><dd>Pezzi di manzo alla griglia</dd><dt>29 - <strong><span xml:lang="ja">Unagi kabayaki</span></strong> <span class='prezzo'>€ 16.00</span></dt><dd>Anguilla</dd></dl>
-         <p class='end-list'><a href='#header'>Torna all'inizio</a></p>
-      </div><div class='panel'>
-               <div class='list-title'>
-               <h4><a href='javascript:void(0)' onclick="manageMenu('SushiNigiri')"><span xml:lang="ja">Sushi Nigiri</span></a></h4>
-               
-            </div>
-            <dl class='portata' id='SushiNigiri'>
-            <dt>30 - <strong><span xml:lang="ja">Maguro sushi</span></strong> <span class='prezzo'>€ 4.00</span></dt><dd>Tonno</dd><dt>31 - <strong><span xml:lang="ja">Sake sushi</span></strong> <span class='prezzo'>€ 3.50</span></dt><dd>Salmone</dd><dt>32 - <strong><span xml:lang="ja">Tai sushi</span></strong> <span class='prezzo'>€ 3.50</span></dt><dd>Orata</dd><dt>33 - <strong><span xml:lang="ja">Suzuki sushi</span></strong> <span class='prezzo'>€ 3.50</span></dt><dd>Branzino</dd><dt>34 - <strong><span xml:lang="ja">Amaebi sushi</span></strong> <span class='prezzo'>€ 3.50</span></dt><dd>Gamberi crudi</dd><dt>35 - <strong><span xml:lang="ja">Ebi sushi</span></strong> <span class='prezzo'>€ 3.50</span></dt><dd>Gamberi cotti</dd><dt>36 - <strong><span xml:lang="ja">Tobigo gunkan</span></strong> <span class='prezzo'>€ 4.00</span></dt><dd>Uova di pesce rondine</dd><dt>36a - <strong><span xml:lang="ja">Ikura gunkan</span></strong> <span class='prezzo'>€ 5.00</span></dt><dd>Uova di salmone</dd><dt>37 - <strong><span xml:lang="ja">Tako sushi</span></strong> <span class='prezzo'>€ 3.50</span></dt><dd>Polipo</dd><dt>38 - <strong><span xml:lang="ja">Unagi sushi</span></strong> <span class='prezzo'>€ 5.00</span></dt><dd>Anguilla</dd><dt>38a - <strong><span xml:lang="ja">Uni gunkan</span></strong> <span class='prezzo'>€ 6.00</span></dt><dd>Ricci di mare</dd><dt>38b - <strong><span xml:lang="ja">Hokkygai sushi</span></strong> <span class='prezzo'>€ 5.00</span></dt><dd>Vongole artiche</dd></dl>
-         <p class='end-list'><a href='#header'>Torna all'inizio</a></p>
-      </div><div class='panel'>
-               <div class='list-title'>
-               <h4><a href='javascript:void(0)' onclick="manageMenu('Temaki')"><span xml:lang="ja">Temaki</span></a></h4>
-               
-            </div>
-            <dl class='portata' id='Temaki'>
-            <dt>39 - <strong><span xml:lang="en">California</span> <span xml:lang="ja">temaki</span></strong> <span class='prezzo'>€ 3.50</span></dt><dd>Granchio, avocado, cetriolo e maionese (1 pz.)</dd><dt>40 - <strong><span xml:lang="ja">Sake temaki</span></strong> <span class='prezzo'>€ 3.50</span></dt><dd>Salmone e avocado (1 pz.)</dd><dt>41 - <strong><span xml:lang="ja">Tekka temaki</span></strong> <span class='prezzo'>€ 4.00</span></dt><dd>Tonno e avocado (1 pz.)</dd><dt>42 - <strong><span xml:lang="ja">Ebiten temaki</span></strong> <span class='prezzo'>€ 3.50</span></dt><dd>Gamberi fritti (1 pz.)</dd></dl>
-         <p class='end-list'><a href='#header'>Torna all'inizio</a></p>
-      </div><div class='panel'>
-               <div class='list-title'>
-               <h4><a href='javascript:void(0)' onclick="manageMenu('Uramaki')">Uramaki</a></h4>
-               
-            </div>
-            <dl class='portata' id='Uramaki'>
-            <dt>43 - <strong><span xml:lang="ja">Uramaki</span> <span xml:lang="en">california</span></strong> <span class='prezzo'>€ 8.00</span></dt><dd>Granchi, avocado, maionese e cetrioli (8 pz.)</dd><dt>43a - <strong><span xml:lang="ja">Uramaki</span> <span xml:lang="en">special california</span></strong> <span class='prezzo'>€ 11.00</span></dt><dd>Granchio, avocado, cetrioli, maionese, gamberi crudi e <span xml:lang="ja">tobigo</span> (8 pz.)</dd><dt>44 - <strong><span xml:lang="ja">Uramaki tekka</span></strong> <span class='prezzo'>€ 9.00</span></dt><dd>Tonno e avocado (8 pz.)</dd><dt>44a - <strong><span xml:lang="ja">Uramaki</span> <span xml:lang="en">spicytuna</span></strong> <span class='prezzo'>€ 11.00</span></dt><dd>Pezzetti di tonno, erba cipollina, salsa piccante e maionese (8 pz.)</dd><dt>45 - <strong><span xml:lang="ja">Uramaki sake</span></strong> <span class='prezzo'>€ 8.00</span></dt><dd>Salmone e avocado (8 pz.)</dd><dt>45a - <strong><span xml:lang="ja">Uramaki</span> <span xml:lang="en">philadelphia</span></strong> <span class='prezzo'>€ 8.00</span></dt><dd>Salmone, avocado e <span xml:lang="en">philadelphia</span> (8 pz.)</dd><dt>46 - <strong><span xml:lang="ja">Uramaki ebiten</span></strong> <span class='prezzo'>€ 8.00</span></dt><dd>Gamberoni alla <span xml:lang="ja">tempura</span> (8 pz.)</dd><dt>46a - <strong><span xml:lang="en">Special rainbow</span></strong> <span class='prezzo'>€ 13.00</span></dt><dd>(8 pz.)</dd></dl>
-         <p class='end-list'><a href='#header'>Torna all'inizio</a></p>
-      </div><div class='panel'>
-               <div class='list-title'>
-               <h4><a href='javascript:void(0)' onclick="manageMenu('Futomaki')"><span xml:lang="ja">Futomaki</span></a></h4>
-               
-            </div>
-            <dl class='portata' id='Futomaki'>
-            <dt>47 - <strong><span xml:lang="ja">Tekka futomaki</span></strong> <span class='prezzo'>€ 12.00</span></dt><dd>Tonno, granchio, avocado, cetrioli e <span xml:lang="ja">tomago</span> (10 pz.)</dd><dt>48 - <strong><span xml:lang="ja">Sake futomaki</span></strong> <span class='prezzo'>€ 11.00</span></dt><dd>Salmone, granchio, avocado, cetrioli e <span xml:lang="ja">tomago</span> (10 pz.)</dd><dt>48a - <strong><span xml:lang="ja">Futomaki ebiten</span></strong> <span class='prezzo'>€ 12.00</span></dt><dd>Gamberone fritto, granchio, avocado, cetrioli, <span xml:lang="ja">tomago</span> e salsa <span xml:lang="ja">teriyaki</span> (10 pz.)</dd></dl>
-         <p class='end-list'><a href='#header'>Torna all'inizio</a></p>
-      </div><div class='panel'>
-               <div class='list-title'>
-               <h4><a href='javascript:void(0)' onclick="manageMenu('Hossomaki')"><span xml:lang="ja">Hossomaki</span></a></h4>
-               
-            </div>
-            <dl class='portata' id='Hossomaki'>
-            <dt>49 - <strong><span xml:lang="ja">Kappa hossomaki</span></strong> <span class='prezzo'>€ 4.00</span></dt><dd>Cetrioli (6 pz.)</dd><dt>50 - <strong><span xml:lang="ja">Tekka hossomaki</span></strong> <span class='prezzo'>€ 4.00</span></dt><dd>Tonno (6 pz.)</dd><dt>51 - <strong><span xml:lang="ja">Sake hossomaki</span></strong> <span class='prezzo'>€ 4.00</span></dt><dd>Salmone (6 pz.)</dd><dt>52 - <strong><span xml:lang="ja">Hossomaki misto</span></strong> <span class='prezzo'>€ 10.00</span></dt><dd>(15 pz.)</dd></dl>
-         <p class='end-list'><a href='#header'>Torna all'inizio</a></p>
-      </div><div class='panel'>
-               <div class='list-title'>
-               <h4><a href='javascript:void(0)' onclick="manageMenu('SushiESashimi')"><span xml:lang="ja">Sushi</span> e <span xml:lang="ja">Sashimi</span></a></h4>
-               
-            </div>
-            <dl class='portata' id='SushiESashimi'>
-            <dt>53 - <strong><span xml:lang="ja">Sushi</span> misto piccolo</strong> <span class='prezzo'>€ 9.00</span></dt><dd>5 pezzi di <span xml:lang="ja">sushi</span> e 3 pezzi di <span xml:lang="ja">hossomaki</span> (8 pz.)</dd><dt>53a - <strong><span xml:lang="ja">Sushi</span> misto grande</strong> <span class='prezzo'>€ 12.00</span></dt><dd>8 pezzi di <span xml:lang="ja">sushi</span> e 3 pezzi di <span xml:lang="ja">hossomaki</span> (11 pz.)</dd><dt>54 - <strong><span xml:lang="ja">Sashimi</span> misto piccolo</strong> <span class='prezzo'>€ 13.00</span></dt><dd>Tonno, salmone e branzino (10 pz.)</dd><dt>54a - <strong><span xml:lang="ja">Sashimi</span> misto grande</strong> <span class='prezzo'>€ 18.00</span></dt><dd>Tonno, salmone e branzino (18 pz.)</dd><dt>55 - <strong><span xml:lang="ja">Sushi</span> e <span xml:lang="ja">Sashimi</span></strong> <span class='prezzo'>€ 25.00</span></dt><dd>10 pz di <span xml:lang="ja">sashimi</span>, 8 pz di <span xml:lang="ja">sushi</span>, 6 pz di <span xml:lang="ja">hossomaki</span> e 1 <span xml:lang="ja">tobigo</span> (25 pz.)</dd></dl>
-         <p class='end-list'><a href='#header'>Torna all'inizio</a></p>
-      </div><div class='panel'>
-               <div class='list-title'>
-               <h4><a href='javascript:void(0)' onclick="manageMenu('Barca')">Barca</a></h4>
-               
-            </div>
-            <dl class='portata' id='Barca'>
-            <dt>56 - <strong>Barca piccola</strong> <span class='prezzo'>€ 20.00</span></dt><dd>10 pezzi di <span xml:lang="ja">sashimi</span>, 6 pezzi di <span xml:lang="ja">sushi</span> e 6 pezzi di <span xml:lang="ja">hossomaki</span> (22 pz.)</dd><dt>57 - <strong>Barca media</strong> <span class='prezzo'>€ 38.00</span></dt><dd>18 pezzi di <span xml:lang="ja">sashimi</span>, 12 pezzi di <span xml:lang="ja">sushi</span>, 6 pezzi di <span xml:lang="ja">hossomaki</span>, 6 pezzi di <span xml:lang="ja">uramaki</span> e 2 <span xml:lang="ja">tobigo</span> (44 pz.)</dd><dt>58 - <strong>Barca grande</strong> <span class='prezzo'>€ 55.00</span></dt><dd>27 pezzi di <span xml:lang="ja">sashimi</span>, 18 pezzi di <span xml:lang="ja">sushi</span>, 12 pezzi di <span xml:lang="ja">hossomaki</span>, 8 pezzi di <span xml:lang="ja">uramaki</span> e 3 pezzi di <span xml:lang="ja">tobigo</span> (68 pz.)</dd></dl>
-         <p class='end-list'><a href='#header'>Torna all'inizio</a></p>
-      </div><div class='panel'>
-               <div class='list-title'>
-               <h4><a href='javascript:void(0)' onclick="manageMenu('Dessert')">Dessert</a></h4>
-               
-            </div>
-            <dl class='portata' id='Dessert'>
-            <dt> - <strong>Sorbetto al limone</strong> <span class='prezzo'>€ 3.00</span></dt><dt> - <strong>Mochi</strong> <span class='prezzo'>€ 3.00</span></dt><dd>riso glutinoso disponibile ai gusti: Arachidi, Tè verde e Crema di sesamo nero</dd><dt> - <strong>Dolce di riso bianco</strong> <span class='prezzo'>€ 3.00</span></dt><dd>riso glutinoso e fagioli rossi</dd><dt> - <strong>Dolce di riso nero</strong> <span class='prezzo'>€ 3.00</span></dt><dd>riso glutinoso, fagioli rossi e sesamo</dd><dt> - <strong>Torta di riso</strong> <span class='prezzo'>€ 3.00</span></dt><dt> - <strong>Torta al cioccolato</strong> <span class='prezzo'>€ 3.00</span></dt><dt> - <strong>Torta di tè verde</strong> <span class='prezzo'>€ 3.00</span></dt><dt> - <strong>Tartufo bianco</strong> <span class='prezzo'>€ 3.00</span></dt><dt> - <strong>Tartufo nero</strong> <span class='prezzo'>€ 3.00</span></dt><dt> - <strong>Gelato di tè verde</strong> <span class='prezzo'>€ 3.00</span></dt><dt> - <strong>Gelato di riso</strong> <span class='prezzo'>€ 3.00</span></dt><dt> - <strong>Gelato di soia</strong> <span class='prezzo'>€ 3.00</span></dt><dt> - <strong>Gelato al sesamo nero</strong> <span class='prezzo'>€ 3.00</span></dt></dl>
-         <p class='end-list'><a href='#header'>Torna all'inizio</a></p>
-      </div></div><div class='panel'>
-               <h3>Bevande</h3>
-               <div class='panel'>
-                  <div class='list-title'>
-                  <h4><a href='javascript:void(0)' onclick="manageMenu('Vini')">Vini</a></h4>
-                  
-               </div>
-               <dl class='listaBevande' id='Vini'>
-                  <dt>- <strong><span xml:lang="fr">Möet et Chandon Réserve Impériale</span></strong> <span class='prezzo'>€ 55.00</span></dt><dd><span xml:lang="fr">champagne</span></dd><dt>- <strong><span xml:lang="de">G.H. Mumm</span></strong> <span class='prezzo'>€ 45.00</span></dt><dd><span xml:lang="fr">champagne</span></dd><dt>- <strong>Contadi Castaldi <span xml:lang="fr">Satèn</span></strong> <span class='prezzo'>€ 35.00</span></dt><dd>franciacorta</dd><dt>- <strong><span xml:lang="fr">Le Culture Cruner</span></strong> <span class='prezzo'>€ 18.00</span></dt><dd>prosecco <span xml:lang="en">dry</span> millesimato</dd><dt>- <strong>Bepin de Eto</strong> <span class='prezzo'>€ 15.00</span></dt><dd>prosecco <span xml:lang="en">extra dry</span> millesimato</dd><dt>- <strong><span xml:lang="ja">Sakè</span> <span xml:lang="en">Black and Gold</span></strong> <span class='prezzo'>€ 25.00</span></dt><dd>750ml</dd><dt>- <strong>Lugana Santa Cristina</strong> <span class='prezzo'>€ 22.00</span></dt><dd>vino fermo</dd><dt>- <strong><span xml:lang="de">Gewürztraminer</span> (Süd Tirol)</strong> <span class='prezzo'>€ 18.00</span></dt><dd>vino fermo</dd><dt>- <strong><span xml:lang="de">Müller Thurgau</span> (Süd Tirol)</strong> <span class='prezzo'>€ 15.00</span></dt><dd>vino fermo</dd><dt>- <strong><span xml:lang="fr">Pinot</span> Bianco (Süd Tirol)</strong> <span class='prezzo'>€ 15.00</span></dt><dd>vino fermo</dd><dt>- <strong><span xml:lang="es">Oroya</span> <span xml:lang="ja">Sushi</span> <span xml:lang="en">Wine</span></strong> <span class='prezzo'>€ 16.00</span></dt><dd>vino fermo</dd><dt>- <strong><span xml:lang="en">Versus White</span></strong> <span class='prezzo'>€ 11.00</span></dt><dd>500ml vino fermo</dd><dt>- <strong><span xml:lang="en">Versus Red</span></strong> <span class='prezzo'>€ 11.00</span></dt><dd>500ml vino fermo rosso</dd></dl>
-         <p class='end-list'><a href='#header'>Torna all'inizio</a></p>
-      </div><div class='panel'>
-                  <div class='list-title'>
-                  <h4><a href='javascript:void(0)' onclick="manageMenu('Birre')">Birre</a></h4>
-                  
-               </div>
-               <dl class='listaBevande' id='Birre'>
-                  <dt>- <strong><span xml:lang="ja">Asahi</span> in latta</strong> <span class='prezzo'>€ 18.00</span></dt><dd>2l</dd><dt>- <strong><span xml:lang="ja">Asahi</span></strong> <span class='prezzo'>€ 4.00</span></dt><dd>500ml</dd><dt>- <strong><span xml:lang="ja">Kirin</span></strong> <span class='prezzo'>€ 4.00</span></dt><dd>500ml</dd><dt>- <strong><span xml:lang="ja">Sapporo</span></strong> <span class='prezzo'>€ 4.00</span></dt><dd>500ml</dd><dt>- <strong><span xml:lang="ja">Sapporo</span> <span xml:lang="en">Silver</span></strong> <span class='prezzo'>€ 6.00</span></dt><dd>650ml</dd><dt>- <strong>Nastro Azzurro</strong> <span class='prezzo'>€ 3.50</span></dt><dd>650ml</dd></dl>
-         <p class='end-list'><a href='#header'>Torna all'inizio</a></p>
-      </div><div class='panel'>
-                  <div class='list-title'>
-                  <h4><a href='javascript:void(0)' onclick="manageMenu('Bevande')">Bevande</a></h4>
-                  
-               </div>
-               <dl class='listaBevande' id='Bevande'>
-                  <dt>- <strong>Coca Cola</strong> <span class='prezzo'>€ 2.00</span></dt><dd>in bottiglia è meglio</dd><dt>- <strong>Fanta</strong> <span class='prezzo'>€ 2.00</span></dt><dd>in lattina</dd><dt>- <strong>Sprite</strong> <span class='prezzo'>€ 2.00</span></dt><dd>in lattina</dd><dt>- <strong>Tè al limone</strong> <span class='prezzo'>€ 2.00</span></dt><dd>in lattina</dd><dt>- <strong>Tè alla pesca</strong> <span class='prezzo'>€ 2.00</span></dt><dd>in lattina</dd><dt>- <strong>Tè verde giapponese</strong> <span class='prezzo'>€ 2.50</span></dt><dd>in lattina</dd><dt>- <strong>Tè verde giapponese al gelsomino</strong> <span class='prezzo'>€ 2.50</span></dt><dd>in lattina</dd><dt>- <strong>Acqua naturale Fillette</strong> <span class='prezzo'>€ 3.00</span></dt><dd>750ml</dd><dt>- <strong>Acqua decisamente frizzante Fillette</strong> <span class='prezzo'>€ 3.00</span></dt><dd>750ml</dd><dt>- <strong>Calice di prosecco</strong> <span class='prezzo'>€ 3.00</span></dt><dt>- <strong>Calice di <span xml:lang="de">Gewürztraminer</span> (Süd Tirol)</strong> <span class='prezzo'>€ 3.50</span></dt><dt>- <strong>Calice di <span xml:lang="de">Müller Thurgau</span> (Süd Tirol)</strong> <span class='prezzo'>€ 3.00</span></dt><dt>- <strong><span xml:lang="ja">Sakè</span></strong> <span class='prezzo'>€ 5.00</span></dt><dd>200ml</dd><dt>- <strong><span xml:lang="ja">Sakè</span> <span xml:lang="en">Black and Gold</span></strong> <span class='prezzo'>€ 8.00</span></dt><dd>200ml</dd><dt>- <strong>Tè verde giapponese</strong> <span class='prezzo'>€ 3.00</span></dt><dt>- <strong>Amaro</strong> <span class='prezzo'>€ 3.00</span></dt><dt>- <strong>Caffè</strong> <span class='prezzo'>€ 1.20</span></dt></dl>
-         <p class='end-list'><a href='#header'>Torna all'inizio</a></p>
-      </div></div>      </div>
-	</div>
-	<div id="footer">
-		<p>Ristorante Giapponese <span xml:lang="ja">Sakura</span> - Specialità <span xml:lang="ja">Sushi</span></p>
-		<p>Bassano del Grappa (VI)</p> 
-		<p>PI 02013730367 - Tel: 0424 382286</p>
-<p id="admin"><a href="../cgi-bin/login.cgi">Area amministratore</a></p></div>
+   <h3>Cibi</h3>
+   <div class='panel'>
+      <div class='list-title'>
+         <h4><a href='javascript:void(0)' onclick="manageMenu('Antipasto')">Antipasto</a></h4>
+      </div>
+      <dl class='portata' id='Antipasto'>
+         <dt>1 - <strong>Involtini Giapponesi</strong> <span class='prezzo'>€ 2.50</span></dt>
+         <dt>1a - <strong><span xml:lang="ja">Edamame</span></strong> <span class='prezzo'>€ 3.00</span></dt>
+         <dd>Fagioli di soia lessi</dd>
+         <dt>1b - <strong><span xml:lang="ja">Daikon</span></strong> <span class='prezzo'>€ 3.00</span></dt>
+         <dd>Rapa gialla marinata</dd>
+         <dt>2 - <strong><span xml:lang="ja">Sunonomo</span></strong> <span class='prezzo'>€ 5.00</span></dt>
+         <dd>Pesce marinato con aceto di riso, servito con alghe e cetrioli</dd>
+         <dt>3 - <strong><span xml:lang="ja">Kaiser</span></strong> <span class='prezzo'>€ 8.00</span></dt>
+         <dd>Insalata con alghe <span xml:lang="ja">kombu</span> e <span xml:lang="ja">sashimi</span></dd>
+         <dt>4 - <strong>Insalata di alghe</strong> <span class='prezzo'>€ 6.00</span></dt>
+         <dt>5 - <strong><span xml:lang="ja">Agedashi Toufu</span></strong> <span class='prezzo'>€ 4.00</span></dt>
+         <dd>Formaggio di soia fritto</dd>
+         <dt>6 - <strong><span xml:lang="ja">Tataki Toufu</span></strong> <span class='prezzo'>€ 6.00</span></dt>
+         <dd>Insalata di formaggio giapponese con tonno</dd>
+         <dt>6a - <strong><span xml:lang="ja">Gyoza Kingyo</span></strong> <span class='prezzo'>€ 6.00</span></dt>
+         <dd>Ravioli giapponesi di pesce</dd>
+         <dt>10 - <strong><span xml:lang="ja">Misoshiru</span></strong> <span class='prezzo'>€ 3.00</span></dt>
+         <dd>Zuppa con pasta di soia, alghe, <span xml:lang="ja">toufu</span> e cipollotti</dd>
+      </dl>
+      <p class='end-list'><a href='#header'>Torna all'inizio</a></p>
+   </div>
+   <div class='panel'>
+      <div class='list-title'>
+         <h4><a href='javascript:void(0)' onclick="manageMenu('Carpaccio')">Carpaccio</a></h4>
+      </div>
+      <dl class='portata' id='Carpaccio'>
+         <dt>7 - <strong>Carpaccio misto</strong> <span class='prezzo'>€ 13.00</span></dt>
+         <dt>8a - <strong>Carpaccio di tonno</strong> <span class='prezzo'>€ 12.00</span></dt>
+         <dt>8b - <strong>Carpaccio di salmone</strong> <span class='prezzo'>€ 11.00</span></dt>
+         <dt>8c - <strong>Carpaccio di branzino</strong> <span class='prezzo'>€ 11.00</span></dt>
+         <dt>9 - <strong>Carpaccio di gamberi crudi</strong> <span class='prezzo'>€ 11.00</span></dt>
+      </dl>
+      <p class='end-list'><a href='#header'>Torna all'inizio</a></p>
+   </div>
+   <div class='panel'>
+      <div class='list-title'>
+         <h4><a href='javascript:void(0)' onclick="manageMenu('Primo')">Primo</a></h4>
+      </div>
+      <dl class='portata' id='Primo'>
+         <dt>11 - <strong><span xml:lang="ja">Tempura udon</span></strong> <span class='prezzo'>€ 8.00</span></dt>
+         <dd>Spaghetti giapponesi con <span xml:lang="ja">tempura</span> in brodo</dd>
+         <dt>12 - <strong><span xml:lang="ja">Yaki udon</span></strong> <span class='prezzo'>€ 8.00</span></dt>
+         <dd>Spaghetti giapponesi con frutti di mare</dd>
+         <dt>13 - <strong><span xml:lang="ja">Yaki meshi</span></strong> <span class='prezzo'>€ 8.00</span></dt>
+         <dd>Riso con frutti di mare</dd>
+         <dt>14 - <strong><span xml:lang="ja">Ramen</span> di pesce</strong> <span class='prezzo'>€ 8.00</span></dt>
+         <dd>Spaghetti giapponesi in brodo con pesce</dd>
+         <dt>15 - <strong><span xml:lang="ja">Ramen</span> di carne</strong> <span class='prezzo'>€ 7.00</span></dt>
+         <dd>Spaghetti giapponesi in brodo con carne</dd>
+         <dt>16 - <strong><span xml:lang="ja">Katsu don</span></strong> <span class='prezzo'>€ 8.00</span></dt>
+         <dd>Riso con cotolette di maiale</dd>
+         <dt>17 - <strong><span xml:lang="ja">Unagidon</span></strong> <span class='prezzo'>€ 13.00</span></dt>
+         <dd>Riso con anguilla affumicata</dd>
+         <dt>18 - <strong><span xml:lang="ja">Chirashi</span></strong> <span class='prezzo'>€ 13.00</span></dt>
+         <dd>Ciotola di riso aromatizzato con fette di <span xml:lang="ja">sashimi</span></dd>
+      </dl>
+      <p class='end-list'><a href='#header'>Torna all'inizio</a></p>
+   </div>
+   <div class='panel'>
+      <div class='list-title'>
+         <h4><a href='javascript:void(0)' onclick="manageMenu('Secondo')">Secondo</a></h4>
+      </div>
+      <dl class='portata' id='Secondo'>
+         <dt>19 - <strong><span xml:lang="ja">Ebi tempura</span></strong> <span class='prezzo'>€ 8.00</span></dt>
+         <dd>Frittura di gamberi</dd>
+         <dt>20 - <strong><span xml:lang="ja">Yasai tempura</span></strong> <span class='prezzo'>€ 6.00</span></dt>
+         <dd>Frittura di verdure</dd>
+         <dt>21 - <strong><span xml:lang="ja">Moriawase tempura</span></strong> <span class='prezzo'>€ 8.00</span></dt>
+         <dd>Frittura di gamberi e verdura</dd>
+         <dt>22 - <strong><span xml:lang="ja">Tonkazu</span></strong> <span class='prezzo'>€ 8.00</span></dt>
+         <dd>Cotoletta di maiale</dd>
+         <dt>23 - <strong><span xml:lang="ja">Karaaghe</span></strong> <span class='prezzo'>€ 8.00</span></dt>
+         <dd>Frittura di pollo con sesamo e zenzero</dd>
+         <dt>24 - <strong><span xml:lang="ja">Yaki tori</span></strong> <span class='prezzo'>€ 8.00</span></dt>
+         <dd>Spiedini di pollo con salsa di soia e miele</dd>
+         <dt>25 - <strong><span xml:lang="ja">Tori teriyaki</span></strong> <span class='prezzo'>€ 8.00</span></dt>
+         <dd>Pezzi di pollo con salsa <span xml:lang="ja">teriyaki</span></dd>
+         <dt>26 - <strong><span xml:lang="ja">Ikafurai</span></strong> <span class='prezzo'>€ 8.00</span></dt>
+         <dd>Calamari fritti con briciole di pane</dd>
+         <dt>27 - <strong><span xml:lang="ja">Tataki</span> di tonno</strong> <span class='prezzo'>€ 13.00</span></dt>
+         <dd>Filetto di tonno scottato in crosta di sesamo</dd>
+         <dt>27a - <strong><span xml:lang="ja">Tataki</span> di salmone</strong> <span class='prezzo'>€ 11.00</span></dt>
+         <dt>27b - <strong><span xml:lang="ja">Tataki</span> di branzino</strong> <span class='prezzo'>€ 11.00</span></dt>
+         <dt>28 - <strong><span xml:lang="ja">Yaki nuki</span></strong> <span class='prezzo'>€ 11.00</span></dt>
+         <dd>Pezzi di manzo alla griglia</dd>
+         <dt>29 - <strong><span xml:lang="ja">Unagi kabayaki</span></strong> <span class='prezzo'>€ 16.00</span>
+         </dt><dd>Anguilla</dd>
+      </dl>
+      <p class='end-list'><a href='#header'>Torna all'inizio</a></p>
+   </div><div class='panel'>
+      <div class='list-title'>
+         <h4><a href='javascript:void(0)' onclick="manageMenu('SushiNigiri')"><span xml:lang="ja">Sushi Nigiri</span></a></h4>   
+      </div>
+      <dl class='portata' id='SushiNigiri'>
+         <dt>30 - <strong><span xml:lang="ja">Maguro sushi</span></strong> <span class='prezzo'>€ 4.00</span></dt>
+         <dd>Tonno</dd>
+         <dt>31 - <strong><span xml:lang="ja">Sake sushi</span></strong> <span class='prezzo'>€ 3.50</span></dt>
+         <dd>Salmone</dd>
+         <dt>32 - <strong><span xml:lang="ja">Tai sushi</span></strong> <span class='prezzo'>€ 3.50</span></dt>
+         <dd>Orata</dd>
+         <dt>33 - <strong><span xml:lang="ja">Suzuki sushi</span></strong> <span class='prezzo'>€ 3.50</span></dt>
+         <dd>Branzino</dd>
+         <dt>34 - <strong><span xml:lang="ja">Amaebi sushi</span></strong> <span class='prezzo'>€ 3.50</span></dt>
+         <dd>Gamberi crudi</dd>
+         <dt>35 - <strong><span xml:lang="ja">Ebi sushi</span></strong> <span class='prezzo'>€ 3.50</span></dt>
+         <dd>Gamberi cotti</dd>
+         <dt>36 - <strong><span xml:lang="ja">Tobigo gunkan</span></strong> <span class='prezzo'>€ 4.00</span></dt>
+         <dd>Uova di pesce rondine</dd>
+         <dt>36a - <strong><span xml:lang="ja">Ikura gunkan</span></strong> <span class='prezzo'>€ 5.00</span></dt>
+         <dd>Uova di salmone</dd>
+         <dt>37 - <strong><span xml:lang="ja">Tako sushi</span></strong> <span class='prezzo'>€ 3.50</span></dt>
+         <dd>Polipo</dd>
+         <dt>38 - <strong><span xml:lang="ja">Unagi sushi</span></strong> <span class='prezzo'>€ 5.00</span></dt>
+         <dd>Anguilla</dd>
+         <dt>38a - <strong><span xml:lang="ja">Uni gunkan</span></strong> <span class='prezzo'>€ 6.00</span></dt>
+         <dd>Ricci di mare</dd>
+         <dt>38b - <strong><span xml:lang="ja">Hokkygai sushi</span></strong> <span class='prezzo'>€ 5.00</span></dt>
+         <dd>Vongole artiche</dd>
+      </dl>
+      <p class='end-list'><a href='#header'>Torna all'inizio</a></p>
+   </div>
+   <div class='panel'>
+      <div class='list-title'>
+         <h4><a href='javascript:void(0)' onclick="manageMenu('Temaki')"><span xml:lang="ja">Temaki</span></a></h4>   
+      </div>
+      <dl class='portata' id='Temaki'>
+         <dt>39 - <strong><span xml:lang="en">California</span> <span xml:lang="ja">temaki</span></strong> <span class='prezzo'>€ 3.50</span></dt>
+         <dd>Granchio, avocado, cetriolo e maionese (1 pz.)</dd>
+         <dt>40 - <strong><span xml:lang="ja">Sake temaki</span></strong> <span class='prezzo'>€ 3.50</span></dt>
+         <dd>Salmone e avocado (1 pz.)</dd>
+         <dt>41 - <strong><span xml:lang="ja">Tekka temaki</span></strong> <span class='prezzo'>€ 4.00</span></dt>
+         <dd>Tonno e avocado (1 pz.)</dd>
+         <dt>42 - <strong><span xml:lang="ja">Ebiten temaki</span></strong> <span class='prezzo'>€ 3.50</span></dt>
+         <dd>Gamberi fritti (1 pz.)</dd>
+      </dl>
+      <p class='end-list'><a href='#header'>Torna all'inizio</a></p>
+   </div>
+   <div class='panel'>
+      <div class='list-title'>
+         <h4><a href='javascript:void(0)' onclick="manageMenu('Uramaki')">Uramaki</a></h4>   
+      </div>
+      <dl class='portata' id='Uramaki'>
+         <dt>43 - <strong><span xml:lang="ja">Uramaki</span> <span xml:lang="en">california</span></strong> <span class='prezzo'>€ 8.00</span></dt>
+         <dd>Granchi, avocado, maionese e cetrioli (8 pz.)</dd>
+         <dt>43a - <strong><span xml:lang="ja">Uramaki</span> <span xml:lang="en">special california</span></strong> <span class='prezzo'>€ 11.00</span></dt>
+         <dd>Granchio, avocado, cetrioli, maionese, gamberi crudi e <span xml:lang="ja">tobigo</span> (8 pz.)</dd>
+         <dt>44 - <strong><span xml:lang="ja">Uramaki tekka</span></strong> <span class='prezzo'>€ 9.00</span></dt>
+         <dd>Tonno e avocado (8 pz.)</dd>
+         <dt>44a - <strong><span xml:lang="ja">Uramaki</span> <span xml:lang="en">spicytuna</span></strong> <span class='prezzo'>€ 11.00</span></dt>
+         <dd>Pezzetti di tonno, erba cipollina, salsa piccante e maionese (8 pz.)</dd>
+         <dt>45 - <strong><span xml:lang="ja">Uramaki sake</span></strong> <span class='prezzo'>€ 8.00</span></dt>
+         <dd>Salmone e avocado (8 pz.)</dd>
+         <dt>45a - <strong><span xml:lang="ja">Uramaki</span> <span xml:lang="en">philadelphia</span></strong> <span class='prezzo'>€ 8.00</span></dt>
+         <dd>Salmone, avocado e <span xml:lang="en">philadelphia</span> (8 pz.)</dd>
+         <dt>46 - <strong><span xml:lang="ja">Uramaki ebiten</span></strong> <span class='prezzo'>€ 8.00</span></dt>
+         <dd>Gamberoni alla <span xml:lang="ja">tempura</span> (8 pz.)</dd>
+         <dt>46a - <strong><span xml:lang="en">Special rainbow</span></strong> <span class='prezzo'>€ 13.00</span></dt>
+         <dd>(8 pz.)</dd>
+      </dl>
+      <p class='end-list'><a href='#header'>Torna all'inizio</a></p>
+   </div>
+   <div class='panel'>
+      <div class='list-title'>
+         <h4><a href='javascript:void(0)' onclick="manageMenu('Futomaki')"><span xml:lang="ja">Futomaki</span></a></h4>   
+      </div>
+      <dl class='portata' id='Futomaki'>
+         <dt>47 - <strong><span xml:lang="ja">Tekka futomaki</span></strong> <span class='prezzo'>€ 12.00</span></dt>
+         <dd>Tonno, granchio, avocado, cetrioli e <span xml:lang="ja">tomago</span> (10 pz.)</dd>
+         <dt>48 - <strong><span xml:lang="ja">Sake futomaki</span></strong> <span class='prezzo'>€ 11.00</span></dt>
+         <dd>Salmone, granchio, avocado, cetrioli e <span xml:lang="ja">tomago</span> (10 pz.)</dd>
+         <dt>48a - <strong><span xml:lang="ja">Futomaki ebiten</span></strong> <span class='prezzo'>€ 12.00</span></dt>
+         <dd>Gamberone fritto, granchio, avocado, cetrioli, <span xml:lang="ja">tomago</span> e salsa <span xml:lang="ja">teriyaki</span> (10 pz.)</dd>
+      </dl>
+      <p class='end-list'><a href='#header'>Torna all'inizio</a></p>
+   </div>
+   <div class='panel'>
+      <div class='list-title'>
+         <h4><a href='javascript:void(0)' onclick="manageMenu('Hossomaki')"><span xml:lang="ja">Hossomaki</span></a></h4>
+      </div>
+      <dl class='portata' id='Hossomaki'>
+         <dt>49 - <strong><span xml:lang="ja">Kappa hossomaki</span></strong> <span class='prezzo'>€ 4.00</span></dt>
+         <dd>Cetrioli (6 pz.)</dd>
+         <dt>50 - <strong><span xml:lang="ja">Tekka hossomaki</span></strong> <span class='prezzo'>€ 4.00</span></dt>
+         <dd>Tonno (6 pz.)</dd>
+         <dt>51 - <strong><span xml:lang="ja">Sake hossomaki</span></strong> <span class='prezzo'>€ 4.00</span></dt>
+         <dd>Salmone (6 pz.)</dd>
+         <dt>52 - <strong><span xml:lang="ja">Hossomaki misto</span></strong> <span class='prezzo'>€ 10.00</span></dt>
+         <dd>(15 pz.)</dd>
+      </dl>
+      <p class='end-list'><a href='#header'>Torna all'inizio</a></p>
+   </div>
+   <div class='panel'>
+      <div class='list-title'>
+         <h4><a href='javascript:void(0)' onclick="manageMenu('SushiESashimi')"><span xml:lang="ja">Sushi</span> e <span xml:lang="ja">Sashimi</span></a></h4>   
+      </div>
+      <dl class='portata' id='SushiESashimi'>
+         <dt>53 - <strong><span xml:lang="ja">Sushi</span> misto piccolo</strong> <span class='prezzo'>€ 9.00</span></dt>
+         <dd>5 pezzi di <span xml:lang="ja">sushi</span> e 3 pezzi di <span xml:lang="ja">hossomaki</span> (8 pz.)</dd>
+         <dt>53a - <strong><span xml:lang="ja">Sushi</span> misto grande</strong> <span class='prezzo'>€ 12.00</span></dt>
+         <dd>8 pezzi di <span xml:lang="ja">sushi</span> e 3 pezzi di <span xml:lang="ja">hossomaki</span> (11 pz.)</dd>
+         <dt>54 - <strong><span xml:lang="ja">Sashimi</span> misto piccolo</strong> <span class='prezzo'>€ 13.00</span></dt>
+         <dd>Tonno, salmone e branzino (10 pz.)</dd>
+         <dt>54a - <strong><span xml:lang="ja">Sashimi</span> misto grande</strong> <span class='prezzo'>€ 18.00</span></dt>
+         <dd>Tonno, salmone e branzino (18 pz.)</dd>
+         <dt>55 - <strong><span xml:lang="ja">Sushi</span> e <span xml:lang="ja">Sashimi</span></strong> <span class='prezzo'>€ 25.00</span></dt>
+         <dd>10 pz di <span xml:lang="ja">sashimi</span>, 8 pz di <span xml:lang="ja">sushi</span>, 6 pz di <span xml:lang="ja">hossomaki</span> e 1 <span xml:lang="ja">tobigo</span> (25 pz.)</dd>
+      </dl>
+      <p class='end-list'><a href='#header'>Torna all'inizio</a></p>
+   </div>
+   <div class='panel'>
+      <div class='list-title'>
+         <h4><a href='javascript:void(0)' onclick="manageMenu('Barca')">Barca</a></h4>   
+      </div>
+      <dl class='portata' id='Barca'>
+         <dt>56 - <strong>Barca piccola</strong> <span class='prezzo'>€ 20.00</span></dt>
+         <dd>10 pezzi di <span xml:lang="ja">sashimi</span>, 6 pezzi di <span xml:lang="ja">sushi</span> e 6 pezzi di <span xml:lang="ja">hossomaki</span> (22 pz.)</dd>
+         <dt>57 - <strong>Barca media</strong> <span class='prezzo'>€ 38.00</span></dt>
+         <dd>18 pezzi di <span xml:lang="ja">sashimi</span>, 12 pezzi di <span xml:lang="ja">sushi</span>, 6 pezzi di <span xml:lang="ja">hossomaki</span>, 6 pezzi di <span xml:lang="ja">uramaki</span> e 2 <span xml:lang="ja">tobigo</span> (44 pz.)</dd>
+         <dt>58 - <strong>Barca grande</strong> <span class='prezzo'>€ 55.00</span></dt>
+         <dd>27 pezzi di <span xml:lang="ja">sashimi</span>, 18 pezzi di <span xml:lang="ja">sushi</span>, 12 pezzi di <span xml:lang="ja">hossomaki</span>, 8 pezzi di <span xml:lang="ja">uramaki</span> e 3 pezzi di <span xml:lang="ja">tobigo</span> (68 pz.)</dd>
+      </dl>
+      <p class='end-list'><a href='#header'>Torna all'inizio</a></p>
+   </div>
+   <div class='panel'>
+      <div class='list-title'>
+         <h4><a href='javascript:void(0)' onclick="manageMenu('Dessert')">Dessert</a></h4>   
+      </div>
+      <dl class='portata' id='Dessert'>
+         <dt> - <strong>Sorbetto al limone</strong> <span class='prezzo'>€ 3.00</span></dt>
+         <dt> - <strong>Mochi</strong> <span class='prezzo'>€ 3.00</span></dt>
+         <dd>riso glutinoso disponibile ai gusti: Arachidi, Tè verde e Crema di sesamo nero</dd>
+         <dt> - <strong>Dolce di riso bianco</strong> <span class='prezzo'>€ 3.00</span></dt>
+         <dd>riso glutinoso e fagioli rossi</dd>
+         <dt> - <strong>Dolce di riso nero</strong> <span class='prezzo'>€ 3.00</span></dt>
+         <dd>riso glutinoso, fagioli rossi e sesamo</dd>
+         <dt> - <strong>Torta di riso</strong> <span class='prezzo'>€ 3.00</span></dt>
+         <dt> - <strong>Torta al cioccolato</strong> <span class='prezzo'>€ 3.00</span></dt>
+         <dt> - <strong>Torta di tè verde</strong> <span class='prezzo'>€ 3.00</span></dt>
+         <dt> - <strong>Tartufo bianco</strong> <span class='prezzo'>€ 3.00</span></dt>
+         <dt> - <strong>Tartufo nero</strong> <span class='prezzo'>€ 3.00</span></dt>
+         <dt> - <strong>Gelato di tè verde</strong> <span class='prezzo'>€ 3.00</span></dt>
+         <dt> - <strong>Gelato di riso</strong> <span class='prezzo'>€ 3.00</span></dt>
+         <dt> - <strong>Gelato di soia</strong> <span class='prezzo'>€ 3.00</span></dt>
+         <dt> - <strong>Gelato al sesamo nero</strong> <span class='prezzo'>€ 3.00</span></dt>
+      </dl>
+      <p class='end-list'><a href='#header'>Torna all'inizio</a></p>
+   </div>
+</div>
+<div class='panel'>
+   <h3>Bevande</h3>
+   <div class='panel'>
+      <div class='list-title'>
+         <h4><a href='javascript:void(0)' onclick="manageMenu('Vini')">Vini</a></h4>      
+      </div>
+      <dl class='listaBevande' id='Vini'>
+         <dt>- <strong><span xml:lang="fr">Möet et Chandon Réserve Impériale</span></strong> <span class='prezzo'>€ 55.00</span></dt>
+         <dd><span xml:lang="fr">champagne</span></dd>
+         <dt>- <strong><span xml:lang="de">G.H. Mumm</span></strong> <span class='prezzo'>€ 45.00</span></dt>
+         <dd><span xml:lang="fr">champagne</span></dd>
+         <dt>- <strong>Contadi Castaldi <span xml:lang="fr">Satèn</span></strong> <span class='prezzo'>€ 35.00</span></dt>
+         <dd>franciacorta</dd>
+         <dt>- <strong><span xml:lang="fr">Le Culture Cruner</span></strong> <span class='prezzo'>€ 18.00</span></dt>
+         <dd>prosecco <span xml:lang="en">dry</span> millesimato</dd>
+         <dt>- <strong>Bepin de Eto</strong> <span class='prezzo'>€ 15.00</span></dt>
+         <dd>prosecco <span xml:lang="en">extra dry</span> millesimato</dd>
+         <dt>- <strong><span xml:lang="ja">Sakè</span> <span xml:lang="en">Black and Gold</span></strong> <span class='prezzo'>€.00</span></dt>
+         <dd>750ml</dd>
+         <dt>- <strong>Lugana Santa Cristina</strong> <span class='prezzo'>€ 22.00</span></dt>
+         <dd>vino fermo</dd><dt>- <strong><span xml:lang="de">Gewürztraminer</span> (Süd Tirol)</strong> <span class='prezzo'>€100</span></dt>
+         <dd>vino fermo</dd>
+         <dt>- <strong><span xml:lang="de">Müller Thurgau</span> (Süd Tirol)</strong> <span class='prezzo'>€ 15.00</span></dt>
+         <dd>vino fermo</dd>
+         <dt>- <strong><span xml:lang="fr">Pinot</span> Bianco (Süd Tirol)</strong> <span class='prezzo'>€ 15.00</span></dt>
+         <dd>vino fermo</dd>
+         <dt>- <strong><span xml:lang="es">Oroya</span> <span xml:lang="ja">Sushi</span> <span xml:lang="en">Wine</span></strongspan class='prezzo'>€ 16.00</span></dt>
+         <dd>vino fermo</dd>
+         <dt>- <strong><span xml:lang="en">Versus White</span></strong> <span class='prezzo'>€ 11.00</span></dt>
+         <dd>500ml vino fermo</dd>
+         <dt>- <strong><span xml:lang="en">Versus Red</span></strong> <span class='prezzo'>€ 11.00</span></dt>
+         <dd>500ml vino fermo rosso</dd>
+      </dl>
+      <p class='end-list'><a href='#header'>Torna all'inizio</a></p>
+   </div>
+   <div class='panel'>
+      <div class='list-title'>
+         <h4><a href='javascript:void(0)' onclick="manageMenu('Birre')">Birre</a></h4>      
+      </div>
+      <dl class='listaBevande' id='Birre'>
+         <dt>- <strong><span xml:lang="ja">Asahi</span></strong> <span class='prezzo'>€ 18.00</span></dt>
+         <dd>2l</dd>
+         <dt>- <strong><span xml:lang="ja">Asahi</span></strong> <span class='prezzo'>€ 4.00</span></dt>
+         <dd>500ml</dd>
+         <dt>- <strong><span xml:lang="ja">Kirin</span></strong> <span class='prezzo'>€ 4.00</span></dt>
+         <dd>500ml</dd>
+         <dt>- <strong><span xml:lang="ja">Sapporo</span></strong> <span class='prezzo'>€ 4.00</span></dt>
+         <dd>500ml</dd>
+         <dt>- <strong><span xml:lang="ja">Sapporo</span> <span xml:lang="en">Silver</span></strong> <span class='prezzo'>€ 6.00</span></dt>
+         <dd>650ml</dd>
+         <dt>- <strong>Nastro Azzurro</strong> <span class='prezzo'>€ 3.50</span></dt>
+         <dd>650ml</dd>
+      </dl>
+      <p class='end-list'><a href='#header'>Torna all'inizio</a></p>
+   </div>
+   <div class='panel'>
+      <div class='list-title'>
+         <h4><a href='javascript:void(0)' onclick="manageMenu('Bevande')">Bevande</a></h4>         
+      </div>
+      <dl class='listaBevande' id='Bevande'>
+         <dt>- <strong>Coca Cola</strong> <span class='prezzo'>€ 2.00</span></dt>
+         <dd>in bottiglia</dd>
+         <dt>- <strong>Fanta</strong> <span class='prezzo'>€ 2.00</span></dt>
+         <dd>in lattina</dd>
+         <dt>- <strong>Sprite</strong> <span class='prezzo'>€ 2.00</span></dt>
+         <dd>in lattina</dd>
+         <dt>- <strong>Tè al limone</strong> <span class='prezzo'>€ 2.00</span></dt>
+         <dd>in lattina</dd>
+         <dt>- <strong>Tè alla pesca</strong> <span class='prezzo'>€ 2.00</span></dt>
+         <dd>in lattina</dd>
+         <dt>- <strong>Tè verde giapponese</strong> <span class='prezzo'>€ 2.50</span></dt>
+         <dd>in lattina</dd>
+         <dt>- <strong>Tè verde giapponese al gelsomino</strong> <span class='prezzo'>€ 2.50</span></dt>
+         <dd>in lattina</dd>
+         <dt>- <strong>Acqua naturale Fillette</strong> <span class='prezzo'>€ 3.00</span></dt>
+         <dd>750ml</dd>
+         <dt>- <strong>Acqua decisamente frizzante Fillette</strong> <span class='prezzo'>€ 3.00</span></dt>
+         <dd>750ml</dd>
+         <dt>- <strong>Calice di prosecco</strong> <span class='prezzo'>€ 3.00</span></dt>
+         <dt>- <strong>Calice di <span xml:lang="de">Gewürztraminer</span> (Süd Tirol)</strong> <span class='prezzo'>€ 3.50</span></dt>
+         <dt>- <strong>Calice di <span xml:lang="de">Müller Thurgau</span> (Süd Tirol)</strong> <span class='prezzo'>€ 3.00</span></dt>
+         <dt>- <strong><span xml:lang="ja">Sakè</span></strong> <span class='prezzo'>€ 5.00</span></dt>
+         <dd>200ml</dd>
+         <dt>- <strong><span xml:lang="ja">Sakè</span> <span xml:lang="en">Black and Gold</span></strong> <span class='prezzo'>€ 8.00</span></dt>
+         <dd>200ml</dd>
+         <dt>- <strong>Tè verde giapponese</strong> <span class='prezzo'>€ 3.00</span></dt>
+         <dt>- <strong>Amaro</strong> <span class='prezzo'>€ 3.00</span></dt>
+         <dt>- <strong>Caffè</strong> <span class='prezzo'>€ 1.20</span></dt>
+      </dl>
+      <p class='end-list'><a href='#header'>Torna all'inizio</a></p>
+   </div>
+</div>
+</div>
+</div>
+<div id="footer">
+	<p>Ristorante Giapponese <span xml:lang="ja">Sakura</span> - Specialità <span xml:lang="ja">Sushi</span></p>
+	<p>Bassano del Grappa (VI)</p> 
+	<p>PI 02013730367 - Tel: 0424 382286</p>
+</div>
 </body>
 </html>
