@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"  xml:lang="it" lang="it">
+<head>
+	<title>Ristorante Sakura</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<meta name="title" content="Ristorante Sakura - Ristorante Giapponese - Bassano del Grappa" />
+	<meta name="description" content="Ristorante Giapponese a Bassano del Grappa. Specialità Sushi con servizio d'asporto." />
+    <meta name="keywords" content="Sakura, ristorante, giapponese, giappone, sushi, asporto, bassano, bassano del grappa, vicenza" />
+    <meta name="author" content="Andrea Tombolato, Eduard Bicego, Davide Castello" />
+    <meta name="language" content="italian it" />
+    <script type="text/javascript" src="js/scripts.js"></script>
+</head>
+<body onload="manageNav()">
+	<div id="header">
+		<div id="fixed-info">
+			<p><a id="city" href="dove-siamo.html">Bassano del Grappa</a> | <a class="tel" href="tel:0424 382286">0424 382286</a></p>
+		</div> 
+			<div id="top-bar">
+				<div id="logo">
+					<h1><span xml:lang="ja">Sakura</span> - Ristorante Giapponese</h1>
+				</div> 
+				<div id="nav-button">
+					<a onclick="manageNav()" title="Menu"> &#9776; </a>
+				</div>
+			</div>
+			<a class="aiuti" href="#path">Salta la navigazione</a>
+		<div id="nav-menu">
+			<ul>
+				<li xml:lang="en">Home</li>
+				<li><a href="../cgi-bin/menu.cgi">Menù</a></li>
+				<li><a href="chi-siamo.html">Chi siamo</a></li>
+				<li><a href="dove-siamo.html">Dove siamo</a></li>
+				<li><a href="curiosita.html">Curiosità</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="main">
+		<div id="path">
+			<h2 xml:lang="en">Home</h2>
+		</div>
+		<div id="content">
+			<div class="panel" id="orari">
+				<h3>Gli Orari</h3>
+				<p class="h">11:00 - 15:00</p> 
+				<p class="h">18:00 - 00:00</p>
+				<p>Chiuso il lunedì e il martedì mattina.</p>
+			</div>
+			<div class="panel" >
+				<h3>Il Ristorante</h3>
+				<p>Siamo lieti di accogliervi in un ambiente intimo e rilassante, arredato secondo l'autentico stile nipponico.</p>
+				<p>Il locale ha un aspetto tipicamente tradizionale, con i colori, le lampade e il parquet che ricordano l’oriente.</p>
+				<p>Un posto ideale dove trascorrere piacevoli serate assaporando il meglio della cucina tipica giapponese.</p>
+				<p>Ottimo per pranzi e cene di lavoro, feste e cerimonie.</p>
+			</div>
+			<div class="panel">
+				<h3>La Cucina</h3>
+				<p>Vi proponiamo un <a href="../cgi-bin/menu.cgi">menù</a> molto ampio che include tutte le specialità dell’arte culinaria giapponese.</p>
+			</div>
+			<div class="panel" >
+				<h3>Take Away</h3>
+				<p>Sentitevi liberi di gustare le nostre prelibatezze orientali a casa vostra o in ufficio.</p>
+				<p>Vi proponiamo le pietanze in comode vaschette, complete di <strong xml:lang="ja">wasabi</strong>, <strong>zenzero</strong> ed <strong xml:lang="ja">ohashi</strong> (le tradizionali bacchette giapponesi).</p>
+				<p>La consegna a domicilio è gratuita entro 15 <abbr title="chilometri">km</abbr> e per un ordine minimo di 30 €.</p>
+				<p>Per prenotazioni ed ulteriori informazioni, chiamaci al numero <a class="tel" href="tel:0424 382286">0424 382286</a>.</p>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<p>Ristorante Giapponese <span xml:lang="ja">Sakura</span> - Specialità <span xml:lang="ja">Sushi</span></p>
+		<p>Bassano del Grappa (VI)</p> 
+		<p>PI 02013730367 - Tel: 0424 382286</p>
+		<p id="admin"><a href="../cgi-bin/login.cgi">Area amministratore</a></p>
+	</div>
+</body>
+</html>
