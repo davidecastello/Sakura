@@ -15,7 +15,7 @@
     <script type="text/javascript" src="js/scripts.js"></script>
 </head>
       
-   <body onload="manageNav(); hideElement()">
+   <body onload="manageNav(); ">
 	<div id="header">
 		<div id="fixed-info">
 			<p><a id="city" href="dove-siamo.html">Bassano del Grappa</a> | <a class="tel" href="tel:0424 382286">0424 382286</a></p>
@@ -45,7 +45,9 @@
 		<div id="content">
         
           <p class='info'>Seleziona una categoria per accedere ai nostri piatti.</p>
-          
+
+<!-- Possibilità di accedere direttamente alla categoria desiderata
+
 <div id='fast-search' class='panel'>
    <h3>Ricerca Veloce</h3>
    <ul>
@@ -65,8 +67,10 @@
       <li><a href='#Bevande'>Bevande</a></li>
    </ul>
 </div>
+-->
+
 <div class='panel'>
-   <h3>Cibi</h3>
+   <h3>Menù</h3>
    <div class='panel'>
       <div class='list-title'>
          <h4><a href='javascript:void(0)' onclick="manageMenu('Antipasto')">Antipasto</a></h4>
@@ -319,9 +323,6 @@
       </dl>
       <p class='end-list'><a href='#header'>Torna all'inizio</a></p>
    </div>
-</div>
-<div class='panel'>
-   <h3>Bevande</h3>
    <div class='panel'>
       <div class='list-title'>
          <h4><a href='javascript:void(0)' onclick="manageMenu('Vini')">Vini</a></h4>      
